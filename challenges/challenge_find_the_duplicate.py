@@ -1,5 +1,6 @@
-def found_duplicate(nums, duplicate):
+def found_duplicate(nums):
     count = 0
+    duplicate = 0
     for i in range(len(nums)):
 
         for j in range(i + 1, len(nums)):
@@ -12,8 +13,7 @@ def found_duplicate(nums, duplicate):
 
 
 def find_duplicate(nums):
-    duplicate = 0
     if (nums == [] or type(nums[0]) == str or len(nums) == 0 or nums[0] < 0):
         return False
 
-    return found_duplicate(nums, duplicate)
+    return found_duplicate(nums)
