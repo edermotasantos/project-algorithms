@@ -4,7 +4,7 @@ def found_duplicate(nums):
     for i in range(len(nums)):
 
         for j in range(i + 1, len(nums)):
-            if (nums[j] == nums[i] and i != j):
+            if (nums[j] == nums[i]):
                 duplicate = nums[j]
                 count = count + 1
     if count == 0:
